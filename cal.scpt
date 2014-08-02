@@ -5,14 +5,14 @@
 ---- then a hash (#) and the Calendar name, 
 ---- and an event is created in given <Calendar>
 
-
 -- eg: eventDescription at 3am till 3h25am today #Pomodoros
 -- eg: sat perfectly still for 30 minutes #Habit
 
--- v2.0
+-- v2.1
 -- by Jaysen Naidoo
 -- 201406
 -- Licensed Under the GPL v2.0
+
 
 set defCal to "Pomodoros"
 set inputStr to " {query} " as string
@@ -34,7 +34,7 @@ end if
 try
 	tell application "Calendar" to activate
 	tell application "Calendar"
-		-- tell (first calendar whose name is calName) to activate
+		tell (first calendar whose name is calName) to activate
 		tell (first calendar whose name is calName)
 			show last event
 			switch view to day view

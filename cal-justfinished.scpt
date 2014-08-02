@@ -9,7 +9,7 @@
 -- Input of form: eventDescription #timeAgo #CalendarName
 -- eg: sat perfectly still #20 #Habit
 
--- v2.0
+-- v2.1
 -- by Jaysen Naidoo
 -- 201406
 -- Licensed Under the GPL v2.0
@@ -47,7 +47,7 @@ set startValue to (current date) - timeAgo * minutes
 set qstr to "" & eventStr & " : " & timeAgo & " mins"
 set descr to "LAST " & timeAgo & "mins - " & eventStr & " in Cal:" & calName
 try
-	-- tell application "Calendar" to activate
+	tell application "Calendar" to activate
 	tell application "Calendar"
 		tell (first calendar whose name is calName)
 			make new event at end of events with properties {summary:qstr, start date:startValue, end date:nowTime}
