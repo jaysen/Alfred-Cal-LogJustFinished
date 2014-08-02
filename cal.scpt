@@ -11,6 +11,10 @@
 set defCal to "Pomodoros"
 set inputStr to " {query} " as string
 
+--to TEST Outside Alfred: 
+--set inputStr to "test me at 4pm #Habit " as string
+
+
 set inputArr to explode("#", inputStr) --Split string by #s
 
 set eventStr to item 1 of inputArr
