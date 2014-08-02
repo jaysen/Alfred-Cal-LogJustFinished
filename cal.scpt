@@ -1,5 +1,11 @@
 -- Cal Script
 -- Creates a Calendar log in given Calendar - using Calendar.app's quick edit syntax:
+
+-- User hits Alfred keystroke - then enters the description, 
+---- then a hash (#) and the Calendar name, 
+---- and an event is created in given <Calendar>
+
+
 -- eg: eventDescription at 3am till 3h25am today #Pomodoros
 -- eg: sat perfectly still for 30 minutes #Habit
 

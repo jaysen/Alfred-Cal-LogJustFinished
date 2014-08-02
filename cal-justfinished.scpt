@@ -1,5 +1,11 @@
 -- CalFin Script
 -- Creates a Calendar log in given Calendar for given minutes ago till now
+
+-- User hits Alfred keystroke - then enters the description, 
+---- then a hash (#) and the Duration, 
+---- then a hash (#) and the Calendar name, 
+---- and an event is created starting <Duration> minutes ago and ending now, in given <Calendar>
+
 -- Input of form: eventDescription #timeAgo #CalendarName
 -- eg: sat perfectly still #20 #Habit
 
