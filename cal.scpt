@@ -1,4 +1,4 @@
--- CalFin Script
+-- Cal Script
 -- Creates a Calendar log in given Calendar - using Calendar.app's quick edit syntax:
 -- eg: eventDescription at 3am till 3h25am today #Pomodoros
 -- eg: sat perfectly still for 30 minutes #Habit
